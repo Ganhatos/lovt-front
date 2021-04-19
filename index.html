@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +8,97 @@
     <title>LOVT</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
-        <div class="logo">
-            <img src="img/logo.svg" alt="" class="logo-principal">
-            <img src="img/You Love, your loft!.svg" alt="" class="logo-secundaria">
-        </div>
-        <button><img src="img/hamburguer.svg" alt="" class="hamburguer"></button>
-    </header>
-    <main>
-        <div class="carrossel">
-            <div class="carrossel-img">
-                <button><div class="setas">
-                    <img src="img/arrow-left.svg" alt="" class="seta-img">
-                </div></button>
-                <button><div class="setas">
-                    <img src="img/arrow-right.svg" alt="" class="seta-img">
-                </div></button>
+        <div class="container">
+            <div class="logo">
+                <h1>LOVT</h1>
+                <h2>You Love, <br>
+                    your loft!</h2>
+            </div>
+            <div class="btn-menu">
+                <button>☰</button>
             </div>
         </div>
-        <div class="anuncio">
-            
-        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="slide" style="background-image: url('img/Rectangle3.svg')"></div>
+                <div class="controls">
+                    <a href="#" title="anterior">
+                        <img src="img/arrow-left.svg" alt="anterior">
+                    </a>
+                    <a href="#" title="próximo">
+                        <img src="img/arrow-right.svg" alt="próximo">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="container">
+                <!-- (article>.thumb+.info)*2 -->
+                <article>
+                    <div class="thumb" style="background-image: url('img/Rectangle6.svg')"></div>
+                    <div class="info">
+                        <div class="flex-between">
+                            <strong class="price">$ 1,200</strong>
+                            <button><span class="tag tag-green">New</span></button>
+                        </div>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu
+                            ut
+                            est. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+                            Casamentiss faiz malandris se pirulitá. Cevadis im ampola pa</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="thumb" style="background-image: url('img/Rectangle7.svg')"></div>
+                    <div class="info">
+                        <div class="flex-between">
+                            <strong class="price">$ 2,000</strong>
+                        <button><span class="tag  tag-orange">Sale</span></button>
+                        </div>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem
+                            cochilar e fazendo pose. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="styles">
+            <div class="container">
+                <h2>Your Style</h2>
+                <article style="background-image: url('img/Rectangle11.svg');">
+                    <h3>Industrial</h3>
+                </article>
+                <article style="background-image: url('img/Rectangle12.svg');">
+                    <h3>Modern</h3>
+                </article>
+                <article style="background-image: url('img/Rectangle13.svg');">
+                    <h3>Classic</h3>
+                </article>
+            </div>
+        </section>
     </main>
     <footer>
-        <div class="mapa">
-            <img src="./img/image1.svg" alt="">
-        </div>
-        <div class="info">
-            <p>LOVT - You love, your loft!</p>
-            <p>Broad St, Newark, NJ 07102 - USA</p>
-            <p>+1(973) 854-555-548</p>
-            <p>constact@lovtrealstate.com</p>
-            
+        <div class="container">
+            <div class="map" style="background-image: url('/img/image1.svg');"></div>
+            <div class="info">
+                <p>LOVT - You love, your loft!</p>
+                <p>Broad St, <br>
+                    Newark, NJ 07102 - USA</p>
+                <p><a href="tel:+1973854555-548">+1 (973) 854-555-548</a></p>
+                <p><a href="mailto:contact@lovtrealstate.com">contact@lovtrealstate.com</a></p>
+                <p>OUR SOCIAL MEDIAS</p>
+                <div class="icones">
+                    <button><div class="icones-img" style="background-image: url('img/instgram.svg');"></div></button>
+                    <button><div class="icones-img" style="background-image: url('img/facebook.svg');"></div></button>
+                    <button><div class="icones-img" style="background-image: url('img/whatsapp.svg');"></div></button>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>
