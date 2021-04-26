@@ -10,14 +10,34 @@
 </head>
 
 <body>
+    <section class="modal" id="modal">
+        <div class="modal-content">
+            <div class="header-modal">
+                <h1>Newslatter</h1>
+                <button class="fechar" id="fechar">X</button>
+            </div>
+            <form>
+                <label for="">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="">Email</label>
+                <input type="text" name="email" id="email">
+                <button>Enviar</button>
+            </form>
+        </div>
+    </section>
     <header>
         <div class="container">
             <div class="logo">
-                <h1>LOVT</h1>
+                <h1 id="logo">LOVT</h1>
                 <h2>You Love, <br>
                     your loft!</h2>
             </div>
+            <p class="olaUsuario"></p>
             <div class="btn-menu">
+                <label class="switch">
+                    <input type="checkbox" onclick="bottomDark()" id="checkbox">
+                    <span class="slider round"></span>
+                  </label>
                 <button>☰</button>
             </div>
         </div>
@@ -99,6 +119,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
