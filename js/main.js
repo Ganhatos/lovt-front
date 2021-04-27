@@ -43,3 +43,32 @@ setTimeout(() => {modal.style.display = "block"}, 5000);
 fechar.onclick = () => {
     modal.style.display = "none";
 }
+
+// document.querySelector("#btn-submit-contact").addEventListener("click", (evento) => {
+//     evento.preventDefault();
+
+//     let nome = document.querySelector("#input_nome").value;
+//     let email = document.querySelector("#input_email").value;
+// });
+
+let formContact = document.querySelector("#form-contact");
+
+formContact.addEventListener("submit", (evento) => {
+    let nome = document.querySelector("#input_nome").value;
+    let email = document.querySelector("#input_email").value;
+    let telefone = document.querySelector("#input_telefone").value;
+    let mensagem = document.querySelector("#mensagem").value;
+    let emailValidate = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+
+    evento.preventDefault();
+    if (!nome || !email || !telefone || !mensagem)
+        alert("Preencha todos os campos");
+    else if (telefone.length < 8)
+        alert("Telefone precisa ter 8 dígitos");
+    else if (nome.length < 2)
+        alert("Nome precisa ter mais de 2 letras");
+    else if(!emailValidate.test(email))
+        alert("Email inválido");
+    else
+        formContact.submit()
+})
